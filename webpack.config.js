@@ -31,6 +31,9 @@ module.exports = {
         }, {
             test: /\.scss$/,
             loader: "style!css!postcss!resolve-url!sass?sourceMap"
+        }, { 
+            test: /\.css$/, 
+            loader: "style-loader!css-loader" 
         }, {
             test: /\.(jpe?g|png|gif|svg)$/i,
             loaders: [
